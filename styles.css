@@ -1,0 +1,157 @@
+body {
+    background-color: #c1c1c1
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 300px;
+    background-color: #ececec;
+    border-radius: 10px;
+    padding: 15px;
+    border: 4px solid #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.brand {
+    text-align: left;
+}
+
+.casio {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 6px;
+    font-family: 'Eurostile', sans-serif;
+}
+
+.calculator-text {
+    font-size: 10px;
+    color: #777;
+    letter-spacing: 0.5px;
+}
+
+.solar-panel {
+    display: flex;
+    gap: 3px;
+}
+
+.solar-cell {
+    width: 20px;
+    height: 20px;
+    background-color: #ececec;
+    border: 3px solid #000;
+}
+
+.display-container {
+    position: relative;
+    background-color: white;
+    margin-bottom: 15px;
+    border: 5px solid #000;
+    height: 120px;
+    clip-path: polygon(50px 0, 100% 0, 100% 100%, 0 100%, 0 50px);
+    overflow: hidden;
+}
+  
+.display-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border: 24px solid #000;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.display {
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    font-family: 'Eurostile', sans-serif;
+}
+
+.display:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(173, 216, 230, 0.5);
+}
+
+.calculation {
+    text-align: right;
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.result {
+    text-align: right;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.keypad {
+    padding: 5px;
+}
+
+.row {
+    margin-bottom: 8px;
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    border: 3px solid #000;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.1s;
+    font-family: 'Eurostile', sans-serif;
+}
+
+.btn:hover, .btn:active {
+    transform: scale(0.95);
+    border-color: #000;
+    background-color: #eaeaea;
+}
+
+.function {
+    color: #4bacc6;
+}
+.function:hover, .function:active {
+    color: #4bacc6;
+}
+
+.operator {
+    color: #e36c09;
+}
+.operator:hover, .operator:active {
+    color: #e36c09;
+}
+
+#zero {
+    width: 100%;
+}
+
+.btn, .calculator, .display, .solar-cell {
+    box-shadow: 2px 2px 0px 1px rgb(0 0 0);
+}
