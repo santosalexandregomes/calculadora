@@ -4,7 +4,7 @@ Uma calculadora inspirada no design clássico das calculadoras Casio, desenvolvi
 
 ## 📸 Preview
 
-![Preview da Calculadora](preview.png)
+![Preview da Calculadora](image.png)
 
 ## 🚀 Tecnologias Utilizadas
 
